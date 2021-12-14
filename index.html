@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Loops</title>
+    <style>
+        td {
+            text-align: center;
+            width:25px;
+            height:25px;
+        }
+    </style>
+</head>
+<body>
+
+
+<script>
+    let html;
+    html = "<table border='1' cellspacing='0' cellpadding='5'>";
+    for (let i = 1; i <= 10; i++) {
+            html += "<tr>";
+        for (let j = 1; j <= 10; j++) {
+            html += "<td>" +(i*j) +"</td>";
+        }
+        html += "</tr>";
+    }
+    html += "</table>";
+    document.write(html);
+
+</script>
+</body>
+</html>
